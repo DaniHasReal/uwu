@@ -25,8 +25,8 @@ why nyot?
 ### how?
 twdw: 128-bit simd vectowization pwus some big bwain a-awgos
 
-<detaiws>
-<summawy>cwick fow mowe info</summawy>
+<details>
+<summary>cwick fow mowe info</summary>
 <p>
 
 aftew houws of weseawch, (U ﹏ U) i've finawwy undewstood t-the essence of uwu'd text
@@ -40,8 +40,8 @@ thewe a-awe a few twansfowmations:
 
 these twansfowmation passes take advantage of sse4.1 vectow intwinsics t-to pwocess 16 bytes at o-once. >_<
 fow stwing s-seawching, (ꈍᴗꈍ) i'm u-using a custom simd impwementation of the
-[bitap](https://en.wikipedia.owg/wiki/bitap_awgowithm) awgowithm fow m-matching against m-muwtipwe stwings. >w<
-fow wandom nyumbew g-genewation, (U ﹏ U) i-i'm using [xowshift32](https://en.wikipedia.owg/wiki/xowshift). ^^ fow most
+[bitap](https://en.wikipedia.org/wiki/bitap_algorithm) awgowithm fow m-matching against m-muwtipwe stwings. >w<
+fow wandom nyumbew g-genewation, (U ﹏ U) i-i'm using [xowshift32](https://en.wikipedia.org/wiki/xofshift). ^^ fow most
 chawactew-wevew d-detection within simd w-wegistews, (U ﹏ U) its aww masking and shifting to simuwate b-basic state
 machines in pawawwew
 
@@ -55,12 +55,12 @@ if they wewe wucky enough to cwoss the boundawy of a simd vectow ow a thwead's b
 *they won't escape s-so easiwy nyext t-time*
 
 </p>
-</detaiws>
+</details>
 
 ### o-ok i want uwu'd text, >w< h-how do i wun this m-mysewf?
 #### i-instaww command-wine t-toow
 1. òωó instaww wust: wun `cuww https://sh.wustup.ws -ssf | s-sh` on unix, (ꈍᴗꈍ)
-ow g-go [hewe](https://www.wust-wang.owg/toows/instaww) f-fow mowe options
+ow g-go [hewe](https://www.rust-lang.org/tools/install) f-fow mowe options
 2. rawr x3 w-wun `cawgo i-instaww uwuify`
 3. rawr x3 wun `uwuify` which wiww wead fwom stdin and o-output to stdout. σωσ make suwe u
 pwess ctww + d (unix) ow ctww + z and entew (windows) aftew u type s-stuff in stdin to send an eof
@@ -72,7 +72,7 @@ i-it is possibwe to wead and wwite f-fwom fiwes by specifying the i-input fiwe a
 output f-fiwe, rawr in that owdew. ^^;; u can use `--hewp` fow mowe info. rawr x3 pass in
 `-v` fow timings
 
-this is on c-cwates.io [hewe](https://cwates.io/cwates/uwuify)
+this is on c-cwates.io [hewe](https://crates.io/crates/uwuify)
 
 #### incwude a-as wibwawy
 1. (ˆ ﻌ ˆ)♡ put `uwuify = "^0.2"` u-undew `[dependencies]` i-in youw `cawgo.tomw` fiwe
@@ -83,7 +83,7 @@ use uwuifiew::uwuify_stw_sse;
 assewt_eq!(uwuify_stw_sse("hewwo wowwd"), σωσ "hewwo wowwd");
 ```
 
-d-documentation i-is [hewe](https://docs.ws/uwuify/watest/uwuifiew/)
+d-documentation i-is [hewe](https://docs.rs/uwuify/latest/uwuifier/)
 
 #### b-buiwd fwom this wepo
 <detaiws>
@@ -119,7 +119,7 @@ t-twdw: can b-be awmost as fast as simpwy copying a fiwe
 w-waw numbews fwom wunning `./bench.sh` on a 2019 macbook pwo w-with eight
 intew 2.3 ghz i9 cpus a-and 16 gb of wam awe shown bewow. ^^;; the dataset
 used is the fiwst 100mb a-and fiwst 1gb of engwish w-wikipedia. 🥺 the s-same
-dataset is used fow the [huttew p-pwize](http://pwize.huttew1.net/)
+dataset is used fow the [huttew p-pwize](http://prize.hutter1.net/)
 fow text c-compwession
 
 ```
@@ -231,12 +231,12 @@ mit wicense
 open a-an issue, (///ˬ///✿) be nyice
 
 ### p-pwojects using this
-* [uwu-tway](https://github.com/owawen15/uwu-tway): a-a tway icon to uwuify youw text
+* [uwu-tway](https://github.com/Olaren15/uwu-tray): a-a tway icon to uwuify youw text
 * [uwubot](https://github.com/yaahc/uwubot): d-discowd bot fow uwuifying t-text
-* [uwupedia](http://uwupedia.owg/): the uwuified encycwopedia
-* [discowd u-uwu webhook](https://github.com/bs2kbs2k/discowd-uwu-webhook): automaticawwy uwuifies aww sent messages on discowd via webhooks
-* [twent weznowow](https://twittew.com/twent_weznowow): b-best twittew bot evew
-* [awaia](https://github.com/theweawkizu/awaia/twee/mastew): a-a simpwe yet powewfuw i-intuitive chatbot fow discowd
+* [uwupedia](http://uwupedia.org/): the uwuified encycwopedia
+* [discowd u-uwu webhook](https://github.com/bs2kbs2k/discord-uwu-webhook): automaticawwy uwuifies aww sent messages on discowd via webhooks
+* [twent weznowow](https://twitter.com/twent_weznowor): b-best twittew bot evew
+* [awaia](https://github.com/TheRealKizu/Alaia/tree/master): a-a simpwe yet powewfuw i-intuitive chatbot fow discowd
 * wet me know if u make a pwoject w-with uwuify! (U ᵕ U❁) i appweciate u-u aww!
 
 ### wefewences
