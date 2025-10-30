@@ -68,7 +68,8 @@ unsafe fn shuffle(a: uint8x16_t, b: uint8x16_t) -> uint8x16_t {
 
 #[inline(always)]
 unsafe fn blend(a: uint8x16_t, b: uint8x16_t, mask: uint8x16_t) -> uint8x16_t {
-    let mask = vshrq_n_u8::<7>(mask);
+    // Convert mask bits (0x00 or non-zero) into full-byte masks (0x00 or 0xFF)
+    let mask = vcgtq_u8(mask, vdupq_n_u8(0)); // if mask > 0, set to 0xFF
     vbslq_u8(mask, b, a)
 }
 
